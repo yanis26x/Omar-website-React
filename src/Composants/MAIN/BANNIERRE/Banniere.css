@@ -1,0 +1,12 @@
+/* "/src/Images/Logo/Banierre.png" */
+.banniere {
+    background-image: url("/src/Images/Logo/Banierre.png"); /* Mets ton image ici */
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* <-- Avant c'était 80vh, maintenant c'est 50vh donc plus petit */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
