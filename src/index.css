@@ -1,0 +1,265 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* Style général */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  color: #333;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+  background: linear-gradient(90deg, #006400, #228B22);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  font-size: 1.2rem;
+  margin-left: 1.5rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #FFD700;
+}
+
+/* Footer */
+footer {
+  background: #006400;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/* Section */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+/* Boutons */
+button, .bouton {
+  background: #006400;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s, transform 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover, .bouton:hover {
+  background: #228B22;
+  transform: scale(1.05);
+}
+
+/* Bannière accueil */
+.banniere {
+  position: relative;
+  text-align: left;  /* Aligne à gauche */
+  color: rgb(255, 255, 255);
+  padding: 4rem 2rem; /* Ajuste la taille de la bannière */
+  height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.background-image-fallback {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Contenu de la bannière : texte et bouton */
+.banner-content {
+  z-index: 1;
+  max-width: 600px; /* Limite la largeur pour ne pas trop étirer le texte */
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.bouton {
+  background: #FFD700;
+  color: black;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.bouton:hover {
+  background: #eeff00;
+  transform: scale(1.05);
+}
+/* Animation bannière */
+@keyframes zoomBanner {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 105%;
+  }
+}
+
+/* Carte produit */
+.produit-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Image produit */
+.produit-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Texte animé */
+.texte-anime {
+  font-size: 1.8rem;
+  opacity: 0;
+  animation: fadeText 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeText {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Formulaire de contact */
+form input, form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+  background: linear-gradient(90deg, #006400, #228B22);
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.navbar-logo a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar-links a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: white;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.navbar-links a:hover {
+  color: #FFD700;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+/* 🚀 VERSION TÉLÉPHONE */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-logo {
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+  }
+
+  .navbar-links a {
+    font-size: 1rem;
+  }
+}
+
