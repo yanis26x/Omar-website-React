@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import TexteAnime from "../components/TexteAnime";
 import ProduitCard from "../components/ProduitCard";
+import './accueil.css';
 
 const produits = [
   { id: 1, titre: "Musc Oud", prix: 19.99, image: "/assets/musc-oud.jpg" },
@@ -21,11 +22,7 @@ export default function Accueil() {
     <div>
       {/* BANNIÈRE */}
       <section className="banniere">
-  <video autoPlay loop muted playsInline className="background-video">
-    <source src="/assets/videoCool.mp4" type="video/mp4" />
-    {/* Si la vidéo ne fonctionne pas, afficher l'image */}
     <img src="/assets/banniere.png" alt="Bannière de RIAD" className="background-image-fallback" />
-  </video>
   <div className="banner-content">
     <h1>Bienvenue chez RIAD</h1>
     <button onClick={scrollToProduits} className="bouton">Voir Produits</button>

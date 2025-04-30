@@ -1,11 +1,12 @@
 import { FaShoppingCart, FaHome, FaPhone, FaInfoCircle } from 'react-icons/fa'; // Imports des icônes
 import { Link } from "react-router-dom";
+import "./navbar.css"
 
 export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/">RIAD</Link>
+        <Link to="/">RIAD26x</Link>
       </div>
       <div className="navbar-links">
         <Link to="/"><FaHome /> Accueil</Link>
