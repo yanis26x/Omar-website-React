@@ -9,7 +9,7 @@
 /* Style général */
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #ffe8a4, #e9ecef);
+  background: linear-gradient(to right, #df8d74, #e9ecef);
   color: #333;
   min-height: 100vh;
   overflow-x: hidden;
@@ -19,7 +19,7 @@ body {
 
 /* Footer */
 footer {
-  background: #006400;
+  background: #000000;
   color: white;
   text-align: center;
   padding: 1rem;

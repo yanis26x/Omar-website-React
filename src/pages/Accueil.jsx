@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-// import TexteAnime2 from "../components/TexteAnime2";
+
 import ProduitCard from "../components/ProduitCard";
 import './accueil.css';
 
@@ -22,17 +22,14 @@ export default function Accueil() {
     <div>
       {/* BANNIÈRE */}
       <section className="banniere">
-    <img src="/assets/banniere.png" alt="Bannière de RIAD" className="background-image-fallback" />
+    <img src="/assets/IAimage2.jpeg" alt="Bannière de RIAD" className="background-image-fallback" />
   <div className="banner-content">
     <h1>Bienvenue chez RIAD</h1>
     <button onClick={scrollToProduits} className="bouton">Voir Produits</button>
   </div>
 </section>
 
-      {/* TEXTE ANIMÉ */}
-      {/* <section>
-        <TexteAnime />
-      </section> */}
+
 
       {/* PRODUITS */}
       <section id="produits">
@@ -49,9 +46,7 @@ export default function Accueil() {
         </div>
       </section>
 
-      <div>
-        <h1>MADE BY @yanis26x</h1>
-      </div>
+
     </div>
   );
 }

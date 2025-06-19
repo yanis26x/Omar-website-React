@@ -10,6 +10,9 @@
     align-items: center;
     overflow: hidden;  /* Pour éviter que l'image dépasse */
   }
+  .banniere h1 {
+    color: rgb(255, 60, 0);
+  }
   
   .background-image-fallback {
     display: block;
