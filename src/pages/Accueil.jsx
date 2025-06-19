@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import TexteAnime from "../components/TexteAnime";
+// import TexteAnime2 from "../components/TexteAnime2";
 import ProduitCard from "../components/ProduitCard";
 import './accueil.css';
 
@@ -30,9 +30,9 @@ export default function Accueil() {
 </section>
 
       {/* TEXTE ANIMÉ */}
-      <section>
+      {/* <section>
         <TexteAnime />
-      </section>
+      </section> */}
 
       {/* PRODUITS */}
       <section id="produits">
