@@ -32,7 +32,7 @@ const styles = {
     marginTop: "1rem",
     display: "inline-block",
     padding: "0.6rem 1.2rem",
-    backgroundColor: "#006400",
+    backgroundColor: "orange",
     color: "white",
     borderRadius: "8px",
     textDecoration: "none",
