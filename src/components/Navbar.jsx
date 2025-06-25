@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/">RIAD26x</Link>
+        <Link to="/">RIAD</Link>
       </div>
       <div className="navbar-links">
         <Link to="/"><FaHome /> Accueil</Link>
