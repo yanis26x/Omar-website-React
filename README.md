@@ -1,8 +1,10 @@
 # instalation 
 
-react-icon
-
+### react-icon
 npm install react-icons
+
+### github pages
+npm install gh-pages --save-dev
 
 # pour ajouter produit 
 
