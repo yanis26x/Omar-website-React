@@ -25,7 +25,7 @@ export default function Accueil() {
     <div>
       {/* BANNIÈRE */}
       <section className="banniere">
-    <img src="./assets/IAimage2.png" alt="Bannière de RIAD" className="background-image-fallback" />
+    <img src="./assets/IAimage2.png" alt="Bannière de RIADddd" className="background-image-fallback" />
   <div className="banner-content">
     <h1>Bienvenue chez RIAD</h1>
     <button onClick={scrollToProduits} className="bouton">Voir Produits</button>
