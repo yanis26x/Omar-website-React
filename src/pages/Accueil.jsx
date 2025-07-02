@@ -57,7 +57,7 @@ export default function Accueil() {
       <section className="banniere">
         <img
           src={`${import.meta.env.BASE_URL}assets/IAimage2.png`} 
-          alt="Bannière de RIADddd"
+          alt="Bannière de RIAD teste1"
           className="background-image-fallback"
         />
 
