@@ -53,25 +53,33 @@
   }
   
   /* 🚀 VERSION TÉLÉPHONE */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .navbar-logo {
-      margin-bottom: 0.5rem;
-    }
-  
-    .navbar-links {
-      flex-direction: column;
-      width: 100%;
-      gap: 0.8rem;
-    }
-  
-    .navbar-links a {
-      font-size: 1rem;
-    }
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
   }
-  
-  
+
+  .navbar-logo {
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar-logo a {
+    font-size: 1.4rem;
+  }
+
+  .navbar-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    width: 100%;
+    gap: 0.6rem 1rem; /* espace entre les lignes et colonnes */
+  }
+
+  .navbar-links a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+}
