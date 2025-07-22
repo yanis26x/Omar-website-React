@@ -7,7 +7,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-logo">
         <Link to="/">
-  <img src="/assets/logoRIAD.png" alt="Logo RIAD" className="logo-image" />
+  <img src="public/assets/logoo.jpg" alt="RIAD" className="logo-image" />
 </Link>
       </div>
       <div className="navbar-links">
