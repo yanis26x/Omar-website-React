@@ -10,7 +10,7 @@ const produits = [
     prix: 19.99,
     description: "Un musc aux notes boisées et précieuses.",
     image: `${baseURL}assets/musc-oud.jpg`,
-    paymentURL: "https://buy.stripe.com/00gbJxchHgIXeLC8wz"
+    paymentURL: "https://buy.stripe.com/00gbJxchHgIXeLC8wz",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const produits = [
     prix: 19.99,
     description: "Un musc frais, pur et élégant.",
     image: `${baseURL}assets/musc-blanc.jpg`,
-    paymentURL: "https://buy.stripe.com/fZe4h53Lb8cr46Y28c"
+    paymentURL: "https://buy.stripe.com/fZe4h53Lb8cr46Y28c",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const produits = [
     prix: 14.99,
     description: "Bakhour de qualité, parfait pour embaumer votre intérieur.",
     image: `${baseURL}assets/bakhour-cone.jpg`,
-    paymentURL: "https://buy.stripe.com/28o9Bp0yZboD32U144"
+    paymentURL: "https://buy.stripe.com/28o9Bp0yZboD32U144",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const produits = [
     prix: 19.99,
     description: "Un bakhour délicat et raffiné.",
     image: `${baseURL}assets/bakhour-blanc.jpg`,
-    paymentURL: "https://buy.stripe.com/5kA00P3Lb2S76f63cd"
+    paymentURL: "https://buy.stripe.com/5kA00P3Lb2S76f63cd",
   },
   {
     id: 5,
@@ -42,14 +42,14 @@ const produits = [
     prix: 17.99,
     description: "Le classique bakhour à l'oud, incontournable.",
     image: `${baseURL}assets/bakhour-standard.jpg`,
-    paymentURL: "https://buy.stripe.com/aEU14T81r8crgTK6oq"
+    paymentURL: "https://buy.stripe.com/aEU14T81r8crgTK6oq",
   },
 ];
 
 export default function ProduitDetail() {
   const { id } = useParams();
   const { ajouterProduit } = usePanier();
-  const produit = produits.find(p => p.id === parseInt(id));
+  const produit = produits.find((p) => p.id === parseInt(id));
 
   if (!produit) return <p>Produit introuvable.</p>;
 
@@ -63,7 +63,11 @@ export default function ProduitDetail() {
         <button onClick={() => ajouterProduit(produit)} style={styles.bouton}>
           Ajouter au Panier
         </button>
-        <a href={produit.paymentURL} target="_blank" rel="noopener noreferrer">
+        <a
+          href={produit.paymentURL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button style={{ ...styles.bouton, backgroundColor: "#1a73e8" }}>
             Payer maintenant
           </button>
