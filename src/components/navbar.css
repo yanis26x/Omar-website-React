@@ -82,4 +82,10 @@
     align-items: center;
     gap: 0.4rem;
   }
+  
 }
+.logo-image {
+  height: 50px; /* Ajuste selon la taille souhaitée */
+  object-fit: contain;
+}
+

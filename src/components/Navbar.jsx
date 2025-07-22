@@ -6,7 +6,9 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/">RIAD</Link>
+        <Link to="/">
+  <img src="/assets/logoRIAD.png" alt="Logo RIAD" className="logo-image" />
+</Link>
       </div>
       <div className="navbar-links">
         <Link to="/"><FaHome /> Accueil</Link>
