@@ -106,7 +106,7 @@ export default function Accueil() {
 
         <div className="banner-content">
           {/* <h1>Bienvenue chez RIAD</h1> */}
-          <h1>RIAD, DERB AL OUD, Votre point de vente de musc et bakhour au Canada</h1> {/* A ADAPTER !! */}
+          <h1>RIAD, DERB AL OUD, Votre point de vente de musc et bakhour au Canada</h1>
           
           <button onClick={scrollToProduits} className="bouton">
             découvrir nos exclusivités

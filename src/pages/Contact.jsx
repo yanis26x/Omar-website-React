@@ -1,11 +1,17 @@
+const baseURL = import.meta.env.BASE_URL;
+
 export default function Contact() {
   return (
     <div style={styles.container}>
-      <h2 style={styles.titre}>Contactez-Nous</h2>
-      <p style={styles.message}>
-        N'hésitez pas à nous contacter pour toute question ou renseignement concernant nos produits !
-        Nous sommes toujours là pour vous répondre avec plaisir.
+      <h2 style={styles.titre}>📩 Contactez-nous</h2>
+      <p style={styles.paragraphe}>
+        Une question ? Un conseil ? Une demande spéciale ?<br />
+        Écris-nous directement sur Instagram — on est là pour vous répondre rapidement et avec attention.
       </p>
+      <p style={styles.paragraphe}>
+        Chez <strong>RIAD</strong>, chaque client est important. On prend le temps de vous écouter, vous conseiller et vous offrir une expérience authentique, du premier message à la dernière goutte de parfum.
+      </p>
+      <p style={styles.ville}>📍 Basés à Montréal</p>
 
       <a
         href="https://www.instagram.com/riad.derb_al_oud/"
@@ -14,7 +20,7 @@ export default function Contact() {
         style={styles.igLink}
       >
         <img
-          src="/assets/instagram-logo.jpg"
+          src={`${baseURL}assets/instagram-logo.jpg`}
           alt="Instagram"
           style={styles.logo}
         />
@@ -29,17 +35,26 @@ const styles = {
     padding: "4rem 2rem",
     textAlign: "center",
     backgroundColor: "#fdfdfd",
+    minHeight: "100vh",
   },
   titre: {
-    fontSize: "2rem",
-    marginBottom: "1rem",
+    fontSize: "2.2rem",
+    marginBottom: "1.5rem",
+    color: "#2e2e2e",
   },
-  message: {
+  paragraphe: {
     fontSize: "1.2rem",
-    marginBottom: "2.5rem",
-    maxWidth: "600px",
+    marginBottom: "1.8rem",
+    maxWidth: "650px",
     marginLeft: "auto",
     marginRight: "auto",
+    color: "#444",
+    lineHeight: "1.8",
+  },
+  ville: {
+    fontSize: "1.1rem",
+    marginBottom: "2.5rem",
+    fontWeight: "500",
   },
   igLink: {
     display: "inline-flex",
